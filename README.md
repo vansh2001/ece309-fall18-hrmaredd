@@ -4,3 +4,5 @@ Name: Harivansh Mareddy
 Year: Senior
 Date: 09/05/2018
 
+* Updated Readme with info of self
+
