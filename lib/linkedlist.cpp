@@ -56,7 +56,7 @@ public:
      tracker = tracker -> getNext();
    }
    copy = tracker -> getItem();
-   cout << copy << "\n";
+   // cout << copy << "\n";
    return copy;
  }
 
@@ -84,7 +84,13 @@ public:
   return NULL; // nothing in list
 
  }
-
+ // void print() {
+ //   ListNode * temp = head;
+ //   while (temp != NULL) {
+ //     cout << temp -> getItem();
+ //     temp = temp -> getNext();
+ //   }
+ // }
 
 ~List()
 {
@@ -104,9 +110,9 @@ public:
 	// l.push_back("A");
 	// l.push_back("d");
 	// l.push_back("e");
- //    l.remove_front();
- //    l.length();
- //    l.get(2);
+ //  l.remove_front();
+ //  l.get(1);
+ //  l.print();
  //
  //
  // }
