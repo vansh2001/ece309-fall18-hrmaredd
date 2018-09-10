@@ -7,7 +7,7 @@ Date: 09/05/2018
 * Updated Readme with info of self
 
 ## Travis-ci  update
-[![Build Status](https://travis-ci.com/vansh2001/ece309-fall18-hrmaredd.svg?branch=master)](https://travis-ci.com/vansh2001/ece309-fall18-hrmaredd)
+https://travis-ci.com/vansh2001/ece309-fall18-hrmaredd.svg?token=xiETxGbhpKfhNvFfv48G&branch=master
 
 
 
