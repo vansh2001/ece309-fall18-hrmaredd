@@ -6,7 +6,6 @@
 int main() {
 
   PList new_list;
-
   Object* num = new Integer(4);
   Object* dollars = new Doubles(10.2);
   Object* Letters = new Strings((char *)"BOBA");
@@ -27,13 +26,13 @@ int main() {
       it.node->getItem()->print();
       it.increment();
      }
-     //remove 4th object and reprint the list
+
      it = new_list.begin();
-     //reset iterator it.increment();
+
      it.increment();
-     new_list.removeAfter(it); //remove the 4th item
-     it = new_list.begin(); //reset iterator
-     printf("reprint the list\n");
+     new_list.removeAfter(it);
+     it = new_list.begin(); 
+     //printf("Print List Again\n");
      while(!it.end()) {
        it.node->getItem()->print();
        it.increment();
