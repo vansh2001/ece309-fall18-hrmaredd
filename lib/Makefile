@@ -1,6 +1,6 @@
 
 # add files you create here
-OBJ = example.o linkedlist.o StringArrayList.o
+OBJ = example.o linkedlist.o StringArrayList.o PList.o
 
 all: libece309.a
 
