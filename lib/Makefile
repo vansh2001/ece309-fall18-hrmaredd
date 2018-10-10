@@ -1,6 +1,6 @@
 
 # add files you create here
-OBJ = linkedlist.o StringArrayList.o PList.o IntegerSetArray.o
+OBJ = linkedlist.o StringArrayList.o IntegerSetArray.o
 
 all: libece309.a
 
