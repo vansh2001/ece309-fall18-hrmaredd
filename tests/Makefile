@@ -1,6 +1,6 @@
 
 # list the name of each file (without the .cpp file at the end)
-EXE = example IntegerSetArray_test
+EXE = example PList_Test IntegerSetArray_test
 
 all: $(EXE)
 
@@ -10,7 +10,7 @@ clean:
 	rm -f $(EXE) *~ logfile.txt $(ECE)
 
 %: %.cpp
-	$(CXX) -o $@ $< -std=c++11 -Wall -Werror -I ../include -L ../lib -lece309
+	$(CXX) -o $@ $< -Wall -Werror -I ../include -L ../lib -lece309
 
 %-run:
 	@./$*
