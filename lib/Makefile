@@ -1,6 +1,6 @@
 
 # add files you create here
-OBJ = example.o IntegerSetArray.o linkedlist.o PList.o
+OBJ = example.o IntegerSetArray.o linkedlist.o PList.o IntArray.o
 
 all: libece309.a
 
