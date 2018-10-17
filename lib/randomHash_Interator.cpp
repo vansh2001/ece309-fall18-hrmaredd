@@ -31,14 +31,54 @@ public:
    virtual bool search(int) const override;
    virtual void remove(int) override;
 
+class iterator {
+  int passed_size;
+  int *passed_table;
+  int index;
+public:
+  iterator (int s, int *l);
+  int getInt();
+  void increment();
+  bool end();
+
+  };
+
+  iterator begin() { return iterator(size, table); }
 };
+
+ IntegerSetHT::iterator::iterator(int s, int *l) {
+  passed_size = s;
+  passed_table= l;
+  for(index = 0; index < passed_size ; index++) {
+  if(passed_table[index] >= 0) { break; }
+  }
+}
+
+int IntegerSetHT::iterator::getInt() {
+  return passed_table[index];
+}
+
+void IntegerSetHT::iterator::increment() {
+
+  index++;
+  for(; index < passed_size; index++) {
+   if(passed_table[index] >= 0) { break; }
+  }
+}
+
+bool IntegerSetHT::iterator::end() {
+  //printf("end called");
+    if( index <  passed_size) { return false; }
+    else return true;
+}
+
 
 
 // can only hold positive integers
 IntegerSetHT::IntegerSetHT(int htsize)
 :IntegerSet(htsize)
 {
-  probeDistance = 20;
+  probeDistance = 10;
    table = new int[size];
    for(int i=0; i<size; i++)
       table[i] = empty_since_start;  // -1 means empty
@@ -108,17 +148,17 @@ void IntegerSetHT::remove(int data)
 }
 
 int main() {
-  IntegerSetHT set(1000);
-  srand(time(NULL));
-  int count=0;
+    IntegerSetHT set(100);
+    set.insert(5);
+    set.insert(99);
+    set.insert(0);
 
-  for(int i = 0; i < 500; i++)
-  {
-
-    int r = rand();
-    set.insert(r);
-    count++;
-
-  }
+   IntegerSetHT::iterator sit = set.begin();
+    while(!sit.end())
+    {
+      printf("%d", sit.getInt());
+      sit.increment();
+    }
+  printf("\n");
   return 0;
 }
