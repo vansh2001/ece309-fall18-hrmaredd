@@ -1,6 +1,6 @@
 
 # add files you create here
-OBJ = example.o IntegerSetArray.o linkedlist.o PList.o IntArray.o randomHash.o
+OBJ = example.o IntegerSetArray.o linkedlist.o PList.o IntArray.o randomHash.o randomHash_two.o
 
 all: libece309.a
 
