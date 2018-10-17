@@ -84,7 +84,6 @@ bool IntegerSetHT::search(int data) const
    }
    index = (index+1) % size;
   }
-
   // data can only be in one location, check it
   return false;
 }
@@ -112,11 +111,9 @@ int main() {
 
   for(int i = 0; i < 500; i++)
   {
-
     int r = rand();
     set.insert(r);
     count++;
-
   }
   return 0;
 }
