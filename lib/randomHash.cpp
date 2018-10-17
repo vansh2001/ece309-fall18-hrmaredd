@@ -8,7 +8,13 @@ using namespace std;
 class IntegerSet {
 protected:
    int size;
-   int hash(int key) const { return (key * 997) % size; }
+   int hash(int key) const {
+     if(((key * 997) % size) < 0) {
+
+       return -((key * 997) % size);
+     }
+     return (key * 997) % size;
+   }
 public:
    IntegerSet(int htsize):size(htsize) {}
    virtual bool insert(int) = 0;
@@ -53,8 +59,8 @@ bool IntegerSetHT::insert(int data)
      // if the entry is not being used, put the
     // data there
      table[ index ] = data;
-     cout << "# of c = " <<  c << "\n";
-     cout << "# of f = " <<  f << "\n";
+     // cout << "# of c = " <<  c << "\n";
+     // cout << "# of f = " <<  f << "\n";
 
      return true;
    }
@@ -65,8 +71,8 @@ bool IntegerSetHT::insert(int data)
   }
   // otherwise give up
   f++;
-  cout << "Number of c = " <<  c << "\n";
-  cout << "Number of f = " <<  f << "\n";
+  // cout << "Number of c = " <<  c << "\n";
+  // cout << "Number of f = " <<  f << "\n";
 
    return false;
 }
@@ -107,13 +113,13 @@ void IntegerSetHT::remove(int data)
 int main() {
   IntegerSetHT set(1000);
   srand(time(NULL));
-  int count=0;
 
-  for(int i = 0; i < 500; i++)
-  {
+  for(int i = 0; i < 500; i++){
     int r = rand();
     set.insert(r);
-    count++;
   }
+
+  printf("%d\n", set.c);
+  printf("%d\n", set.f);
   return 0;
 }

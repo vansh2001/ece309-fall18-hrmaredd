@@ -8,7 +8,13 @@ using namespace std;
 class IntegerSet {
 protected:
    int size;
-   int hash(int key) const { return (key * (457662)) % size; }
+   int hash(int key) const {
+     if (((key * (457662)) % size) < 0) {
+
+       return -((key * (457662)) % size);
+     }
+     return ((key * (457662)) % size);
+     }
 public:
    IntegerSet(int htsize):size(htsize) {}
    virtual bool insert(int) = 0;
