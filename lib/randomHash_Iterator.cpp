@@ -42,7 +42,6 @@ public:
   bool end();
 
   };
-
   iterator begin() { return iterator(size, table); }
 };
 
@@ -71,8 +70,6 @@ bool IntegerSetHT::iterator::end() {
     if( index <  passed_size) { return false; }
     else return true;
 }
-
-
 
 // can only hold positive integers
 IntegerSetHT::IntegerSetHT(int htsize)
