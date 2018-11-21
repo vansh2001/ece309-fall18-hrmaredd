@@ -18,12 +18,12 @@ private:
   int *heapArray;    // this is the maxheap
   int heapArraySize; // size of the array
   int nextIndex;     // location of next free array entry
-  node_helper *nodesH = NULL;
 protected:
   void percolate_up(int);
   void percolate_down(int, int);
 
 public:
+  node_helper *nodesH = NULL;
   MinHeap(int size = 100, node_helper *j = NULL) : heapArraySize(size), nodesH(j) {
     heapArray = new int[size];
     for (int i = 0; i < size; i++)
