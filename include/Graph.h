@@ -73,14 +73,4 @@ public:
   }
 };
 
-class node_helper {
-public:
-  node_helper() {
-    distance = INT_MAX;
-    pred = -1;
-  }
-  int distance;
-  int pred;
-};
-
 #endif // GRAPH_H

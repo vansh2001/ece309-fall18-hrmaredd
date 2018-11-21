@@ -3,6 +3,17 @@
 #include "Graph.h"
 #include "List.h"
 
+class node_helper {
+public:
+  node_helper() {
+    distance = INT_MAX;
+    pred = -1;
+  }
+  int distance;
+  int pred;
+};
+
+
 class MinHeap {
 private:
   int *heapArray;    // this is the maxheap
