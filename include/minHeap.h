@@ -13,7 +13,6 @@ public:
   int pred;
 };
 
-
 class MinHeap {
 private:
   int *heapArray;    // this is the maxheap
