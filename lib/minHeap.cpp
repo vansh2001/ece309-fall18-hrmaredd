@@ -4,7 +4,7 @@
 #include "Graph.h"
 #include "List.h"
 
-using namespace std;
+//using namespace std;
 
 void MinHeap::percolate_up(int index) {
   while (index > 0) {
