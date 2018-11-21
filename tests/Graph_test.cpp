@@ -3,8 +3,6 @@
 #include "minHeap.h"
 #include "List.h"
 
-
-
 int main(){
    printf("graph worked\n");
    MinHeap heap;

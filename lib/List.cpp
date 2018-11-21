@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "List.h"
-// Hold a string
+
 
 List::List() {
   // start with an empty list
