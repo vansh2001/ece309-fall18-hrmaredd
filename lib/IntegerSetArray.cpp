@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 IntegerSetArray::IntegerSetArray(int x):IntegerSet(x) {
   filled = 0;
   table = new int[x];
