@@ -21,7 +21,7 @@ public:
 class Doubles: public Object {
 public:
   double data;
-  Doubles(double x): data(x){}
+  Doubles(double x):data(x){}
   void print() {
      printf("%f\n", data);
   }
