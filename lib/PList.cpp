@@ -3,7 +3,7 @@
 #include <iostream>
 #include "PList.h"
 
-using namespace std;
+//using namespace std;
 
 PList::iterator PList::begin(){
   return iterator(head);
