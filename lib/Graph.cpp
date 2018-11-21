@@ -3,7 +3,6 @@
 #include "minHeap.h"
 #include "List.h"
 
-
 node_helper *ShortestPath(Graph &g, int startV) {
 
   int numNodes = g.getNumNodes();
