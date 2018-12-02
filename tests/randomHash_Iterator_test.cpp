@@ -3,7 +3,6 @@
 #include <iostream>
 #include "randomHash_Iterator.h"
 
-
 int main() {
     IntegerSetHT set(100);
     set.insert(5);
