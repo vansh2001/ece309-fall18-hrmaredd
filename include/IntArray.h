@@ -5,6 +5,7 @@
 #include <string.h>
 #include <cstdlib>
 using namespace std;
+namespace ece309 {
 
 class IntArray
 {
@@ -27,5 +28,6 @@ public:
    int get(int index);
    int getLength();
 };
+}
 
 #endif //INTARRAY_H

@@ -4,6 +4,7 @@
 #include "PList.h"
 
 //using namespace std;
+namespace ece309 {
 
 PList::iterator PList::begin(){
   return iterator(head);
@@ -60,4 +61,5 @@ void PList::insertAfter(iterator it, Object *item){
           it.node->setNext(node);
           if (tail==it.node) tail = node;
   }
+}
 }

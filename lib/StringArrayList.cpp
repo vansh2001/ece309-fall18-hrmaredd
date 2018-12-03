@@ -3,6 +3,8 @@
 #include <iostream>
 
 using namespace std;
+namespace ece309 {
+
 
 class StringArrayList {
 
@@ -63,6 +65,7 @@ string remove_front() {
     delete[] array;
 }
 };
+}
 
 int main() {
 

@@ -5,6 +5,7 @@
 #include "List.h"
 
 //using namespace std;
+namespace ece309 {
 
 void MinHeap::percolate_up(int index) {
   while (index > 0) {
@@ -60,4 +61,5 @@ bool MinHeap::remove(int &val) {
     return true;
   }
   return false;
+}
 }

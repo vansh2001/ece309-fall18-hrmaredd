@@ -3,7 +3,7 @@
 #include <iostream>     // std::cout
 
 using namespace std;
-
+namespace ece309 {
 class MaxHeap {
 private:
   int *heapArray;    // this is the maxheap
@@ -147,6 +147,7 @@ for(int i = 0; i < min(7,heapArraySize); i++){
         bronze = max(max(heapArray[5], heapArray[6]), heapArray[3]);
       }
   }
+}
 }
 
 int main() {

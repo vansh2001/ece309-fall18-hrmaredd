@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include<string>
 #include <iostream>
+namespace ece309 {
 
 class IntInf{
 public:
@@ -18,3 +19,4 @@ public:
   bool operator>(const IntInf &rhs) const;
   bool operator<(const IntInf &rhs) const;
 };
+}

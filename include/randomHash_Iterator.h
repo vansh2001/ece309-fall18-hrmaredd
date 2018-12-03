@@ -2,6 +2,8 @@
 #include <string>
 #include <iostream>
 
+namespace ece309 {
+
 
 // IntegerSet abstract base class to demonstrate hash table concepts
 class IntegerSet {
@@ -43,3 +45,4 @@ public:
   };
   iterator begin() { return iterator(size, table); }
 };
+}

@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace std;
+namespace ece309 {
 
 // IntegerSet abstract base class to demonstrate hash table concepts
 class IntegerSet {
@@ -108,6 +109,7 @@ void IntegerSetHT::remove(int data)
    }
    index = (index+1) % size;
   }
+}
 }
 
 int main() {

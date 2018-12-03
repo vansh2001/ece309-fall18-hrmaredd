@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace std;
+namespace ece309 {
 
 class IntegerSet {
 protected:
@@ -25,3 +26,4 @@ public:
   virtual bool search(int) const override;
   virtual void remove(int) override;
 };
+}

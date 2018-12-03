@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+namespace ece309 {
+
 // Hold a string
 class Item {
 public:
@@ -181,7 +183,7 @@ void List::removeAfter(List::iterator it) // pseudocode in zyBook 2.4
        delete remove; // delete node      // delete the removed node
      }
 }
-
+}
 
 int main()
 {

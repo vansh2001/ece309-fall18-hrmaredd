@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "List.h"
 
+namespace ece309 {
 
 List::List() {
   // start with an empty list
@@ -82,4 +83,5 @@ void List::removeAfter(List::iterator it) // pseudocode in zyBook 2.4
       tail = tmp;  // if removing tail, update tail
     delete remove; // delete node      // delete the removed node
   }
+}
 }

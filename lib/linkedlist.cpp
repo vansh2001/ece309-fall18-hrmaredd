@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace std;
+namespace ece309 {
 
 class List{
 public:
@@ -102,7 +103,7 @@ public:
   }
 }
 };
-
+}
 
  // int main (){
  //

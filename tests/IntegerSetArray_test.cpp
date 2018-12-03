@@ -4,6 +4,7 @@
 #include <iostream>
 
 using namespace std;
+using namespace ece309;
 
 int main()
 {

@@ -3,6 +3,8 @@
 #include <iostream>
 #include "randomHash_Iterator.h"
 
+using namespace ece309;
+
 int main() {
     IntegerSetHT set(100);
     set.insert(5);

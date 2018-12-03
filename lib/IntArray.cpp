@@ -3,6 +3,8 @@
 #include "IntArray.h"
 using namespace std;
 
+namespace ece309 {
+
 IntArray::IntArray(int le, int val=0):length(le) {
     array = new int[le];
     for(int i=0; i<le; i++)
@@ -134,3 +136,5 @@ int IntArray::get(int index) {
 }
 
 int IntArray::getLength() { return length; }
+
+}

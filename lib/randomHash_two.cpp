@@ -3,6 +3,7 @@
 #include <iostream>
 
 using namespace std;
+namespace ece309 {
 
 // IntegerSet abstract base class to demonstrate hash table concepts
 class IntegerSet {
@@ -127,4 +128,5 @@ int main() {
 
   }
   return 0;
+}
 }

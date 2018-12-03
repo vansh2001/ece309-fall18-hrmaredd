@@ -4,6 +4,7 @@
 #include "IntInf.h"
 
 using namespace std;
+using namespace ece309;
 
 int main() {
 printf("IntInf program ran succesfull....\n");

@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
+namespace ece309 {
 
 class Object{
 public:
@@ -81,3 +82,4 @@ public:
   void insertAfter(iterator it, Object *a);
 
 };
+}

@@ -6,6 +6,8 @@
 
 using namespace std;
 
+namespace ece309 {
+
 IntegerSetArray::IntegerSetArray(int x):IntegerSet(x) {
   filled = 0;
   table = new int[x];
@@ -45,4 +47,5 @@ void  IntegerSetArray::remove(int data) {
   for(int k = filled; k < size; k++) {
     table[k] = 0;
   }
+}
 }

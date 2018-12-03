@@ -3,6 +3,8 @@
 #include <iostream>
 #include "IntInf.h"
 
+namespace ece309 {
+
 IntInf::IntInf(int x, bool inf, bool neg_inf):num(x){}
 
 IntInf IntInf::operator=(const IntInf &rhs) {
@@ -89,4 +91,5 @@ bool IntInf::operator>(const IntInf &rhs) const{
 bool IntInf::operator<(const IntInf &rhs) const{
   if(rhs.pos_inf) return true;
   else return false;
+}
 }

@@ -2,6 +2,7 @@
 #include <string.h>
 #include "Graph.h"
 #include "List.h"
+namespace ece309 {
 
 class node_helper {
 public:
@@ -41,3 +42,4 @@ public:
   bool remove(int &); // remove the max value
   bool empty() {return nextIndex == 0; }
 };
+}

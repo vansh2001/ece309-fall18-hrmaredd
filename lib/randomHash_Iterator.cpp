@@ -4,6 +4,7 @@
 #include "randomHash_Iterator.h"
 
 using namespace std;
+namespace ece309 {
 
  IntegerSetHT::iterator::iterator(int s, int *l) {
   passed_size = s;
@@ -102,4 +103,5 @@ void IntegerSetHT::remove(int data)
    }
    index = (index+1) % size;
   }
+}
 }

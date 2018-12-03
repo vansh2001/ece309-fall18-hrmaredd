@@ -3,6 +3,7 @@
 #include <string.h>
 
 using namespace std;
+using namespace ece309;
 
 int main() {
   int testPassCnt = 0;
