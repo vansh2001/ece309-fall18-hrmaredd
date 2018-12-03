@@ -67,6 +67,7 @@ string remove_front() {
 };
 }
 
+using namespace ece309;
 int main() {
 
   StringArrayList r = StringArrayList(5);  //initial size

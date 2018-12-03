@@ -185,6 +185,7 @@ void List::removeAfter(List::iterator it) // pseudocode in zyBook 2.4
 }
 }
 
+using namespace ece309;
 int main()
 {
   List l;

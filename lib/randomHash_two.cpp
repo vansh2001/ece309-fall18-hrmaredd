@@ -114,6 +114,7 @@ void IntegerSetHT::remove(int data)
   }
 }
 
+using namespace ece309;
 int main() {
   IntegerSetHT set(1000);
   srand(time(NULL));

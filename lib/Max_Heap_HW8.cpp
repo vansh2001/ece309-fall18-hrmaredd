@@ -150,6 +150,7 @@ for(int i = 0; i < min(7,heapArraySize); i++){
 }
 }
 
+using namespace ece309;
 int main() {
 
     int gold = 0;
