@@ -112,6 +112,7 @@ namespace ece309 {
   }
 }
 
+using namespace ece309;
 int main() {
   IntegerSetHT set(1000);
   srand(time(NULL));
